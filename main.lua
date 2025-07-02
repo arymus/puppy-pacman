@@ -20,9 +20,10 @@ PACMAN COMPONENTS
 
 -- Function that runs when the game is loaded
 function love.load()
-    player = love.graphics.newImage("/assets/images/player.png")
-    enemy = love.graphics.newImage("/assets/images/enemy.png")
-    bone = love.graphics.newImage("/assets/images/bone.png")
-    power_pellet = love.graphics.newImage("/assets/images/power_pellet.png")
-end
 
+    -- Initialize all assets on game load
+    player = love.graphics.newImage("/assets/images/player.png") -- Player sprite
+    enemy = love.graphics.newImage("/assets/images/enemy.png") -- Enemy sprite
+    kibble = love.graphics.newImage("/assets/images/kibble.png") -- Kibble (accumulates points)
+    bone = love.graphics.newImage("/assets/images/bone.png") -- Bone (makes enemies vulnerable)
+end
